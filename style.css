@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap');
+body{
+  font-family:"Cherry Bomb One", system-ui;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+.container{
+    text-align: center;
+    padding: 10px 20px;
+    border-color: black;
+    border-radius: 20px;
+    width: 50%;
+    max-width: 500px;
+    margin: auto;
+  }
+}
+.input-section{
+  margin-bottom: 1px;
+}
+input{
+  font-size: 1rem;
+  margin-left: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-family: "Cherry Bomb One", system-ui;
+  width: 50%;
+  max-width: 200px;
+  padding: 10px;
+}
+.button button{
+  font-family: "Cherry Bomb One", system-ui;
+  color: #FCEFFA;
+  background-color: #423048;
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  justify-content: center;
+  padding: 0.75em 1.5em;
+  font-size: 1rem;
+}
+.button button:hover{
+  background-color: #D09DB8;
+}
+#countdown{
+  font-size: 50px;
+}
