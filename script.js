@@ -2,6 +2,7 @@ const minuteInput = document.getElementById('minutes');
 const startbutton = document.getElementById('start');
 const resetbutton = document.getElementById('reset');
 const countdownDisplay = document.getElementById('display');
+const alarmSound = new Audio('https://www.image2url.com/r2/default/audio/1783731884967-6ac11c7d-eb4a-4329-b22e-8724cf1bf569.wav')
 document.querySelector('p');
 let countdowninterval; //to store interval ID
 //start countdown
@@ -26,6 +27,7 @@ startbutton.addEventListener("click", () => {
     //stop the countdown when timeleft is 0
     if(timeLeft < 0){
       clearInterval(countdowninterval);
+      alarmSound.play();
       countdownDisplay.textContent = "time's up!";
     }
   }, 1000);
